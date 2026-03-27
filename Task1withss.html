@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 1 - Resume</title>
+
+<style>
+
+body{
+  font-family: Arial, sans-serif;
+  margin:0;
+  padding:50px;
+  background: linear-gradient(135deg,#0f172a,#1e293b);
+  color:#e5e7eb;
+}
+
+/* HEADER */
+header{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+header h1{
+  font-size:36px;
+  color:#60a5fa;
+  margin-bottom:10px;
+}
+
+header p{
+  max-width:700px;
+  margin:auto;
+  font-size:16px;
+  line-height:1.6;
+  color:#cbd5f5;
+}
+
+/* COLLAPSIBLE CARDS */
+details{
+  background: rgba(30,41,59,0.85);
+  border-left:8px solid #3b82f6;
+  border-radius:20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  padding:20px 30px;
+  margin-bottom:30px;
+  transition:0.3s;
+  backdrop-filter: blur(10px);
+}
+
+details:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.8);
+}
+
+/* SUMMARY */
+summary{
+  font-size:22px;
+  color:#60a5fa;
+  cursor:pointer;
+  list-style:none;
+  position: relative;
+  padding-right:25px;
+  user-select:none;
+}
+
+/* Arrow */
+summary::after{
+  content:'▸';
+  position:absolute;
+  right:0;
+  font-size:20px;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::after{
+  transform: rotate(90deg);
+}
+
+/* CONTENT */
+details img{
+  display:block;
+  margin:20px auto 0;
+  max-width:80%;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.7);
+  transition:0.3s;
+}
+
+details img:hover{
+  transform: scale(1.05);
+}
+
+/* LINKS */
+details ul{
+  list-style:none;
+  padding:0;
+  text-align:center;
+  margin-top:15px;
+}
+
+details li{
+  margin:12px 0;
+  font-size:16px;
+}
+
+details a{
+  color:white;
+  background:#2563eb;
+  padding:10px 20px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+details a:hover{
+  background:#1d4ed8;
+  box-shadow:0 0 10px #3b82f6;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Task 1 - Resume</h1>
+<p>
+This project is a simple resume webpage created using HTML. It shows
+personal information, education, and skills in a clean and organized
+layout.
+</p>
+</header>
+
+<details>
+  <summary>Sample Output</summary>
+  <img src="c:\Users\imarijanegueco\Desktop\Image\Task1result.jpeg" alt="Sample Output">
+</details>
+
+<details>
+  <summary>Sample Code</summary>
+  <img src="c:\Users\imarijanegueco\Desktop\Image\code1.png" alt="Sample Code">
+</details>
+
+<details>
+  <summary>Link to the Actual Source Code</summary>
+  <ul>
+    <li>
+      <b>Midterm Task 1:</b><br><br>
+      <a href="Task1 Resume.html" target="_blank">View Resume Source Code</a>
+    </li>
+  </ul>
+</details>
+
+</body>
+</html>
+
+
+
